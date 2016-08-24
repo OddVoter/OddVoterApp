@@ -35,8 +35,8 @@
     "url": "",
     "token": "",
     "mailer": {
-      "name": "The DemocracyOS Team",
-      "email": "no-reply@democracyos.org",
+      "name": "The OddVoter Team",
+      "email": "no-reply@oddvoter.com",
       "service": "",
       "auth": {
         "user": "",
@@ -78,12 +78,12 @@
     "availableLocales"
   ],
   "socialshare": {
-    "siteName": "DemocracyOS",
-    "siteDescription": "DemocracyOS voting system",
+    "siteName": "OddVoter",
+    "siteDescription": "Oddvoter - an implementation of DemocracyOS for Atlanta"
     "image": "https://2.gravatar.com/avatar/a8b9176bd0d042db078bf38500727671?d=https%3A%2F%2Fidenticons.github.com%2F14bae9f2564556f8eb23cc263a779f59.png&s=400",
-    "domain": "democracyos.org",
+    "domain": "oddvoter.com",
     "twitter": {
-      "username": "@democracyos"
+      "username": "@oddvoter
     }
   },
   "logo": "/boot/logo.png",
