@@ -1,7 +1,7 @@
 {
   "privileges-alert.not-can-view": "This is a Secret Democracy, to be allowed to participate the owner should give you permissions.",
   "privileges-alert.not-can-vote-and-comment": "This is a Restricted Democracy, to be allowed to participate the owner should give you permissions.",
-  "404.back-to-democracyos": "Go back to DemocracyOS",
+  "404.back-to-democracyos": "Go back to OddVoter",
   "404.go-back-to": "go back to",
   "404.not-exists": "This page does not exist",
   "add-user-input.placeholder": "Add a Person",
@@ -158,7 +158,7 @@
   "comments.sorts.score": "Top",
   "comments.your-argument": "Your argument",
   "comments.your.arguments": "Your arguments",
-  "common.app-name": "DemocracyOS",
+  "common.app-name": "OddVoter",
   "common.back": "Back",
   "common.cancel": "Cancel",
   "common.close": "Closes",
