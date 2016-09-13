@@ -7,20 +7,31 @@ body
             display none
           a[href="/signup"]
             display inline-block
-    .content
-      // background image
+    #content
+      background-image url('/boot/city-background.png')
+      background-size cover
+      background-repeat no-repeat
+      background-position center top
 
 #signin-form
-  background-color: #efefef
+  padding 12px
+  form
+    background-color #efefef
   .form-group
     overflow hidden
     .btn
-      text-transform: uppercase
+      text-transform uppercase
+    .forgot
+      position absolute
+      margin-top 33px
+      right 8px
+      a
+        color: #eba450
     .login-button
-      background-color: #71c368
+      background-color #eba450
     .create-account-button
-      background-color: #eba450
-    .or
-      width: 100%
-      text-align: center
-      text-transform: uppercase
+      background-color #71c368
+  .or
+    width 100%
+    text-align center
+    text-transform uppercase
