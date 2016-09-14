@@ -189,6 +189,7 @@
     "build": "gulp build",
     "watch": "gulp watch",
     "clean": "gulp clean",
+    "heroku-postbuild": "gulp build",
     "test": "NODE_PATH=. MONGO_URL=mongodb://localhost/DemocracyOS-test gulp test"
   }
 }
