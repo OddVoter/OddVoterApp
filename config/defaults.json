@@ -70,7 +70,7 @@
     "signupUrl",
     "settingsUrl",
     "homeLink",
-    "headerBackgroundColor",
+    "headerBackgroundColor": "#006E90",
     "headerFontColor",
     "facebookSignin",
     "visibility",
