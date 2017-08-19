@@ -1,4 +1,255 @@
 
+2.8.5 / 2017-07-27
+==================
+
+  * Update democracyos-notifier to 2.1.2
+  * Fix error logging on startup
+
+2.8.0 / 2017-07-10
+==================
+
+  * Add slack errors
+  * update notifier to 2.1.0
+  * Add new-comment notification
+
+2.7.3 / 2017-07-09
+==================
+
+  * Update notifier to 2.0.3
+
+2.7.1 / 2017-07-09
+==================
+
+  * Update notifier to 2.0.2
+
+2.6.2 / 2017-07-03
+==================
+
+  * Fix timeago component
+  * Fix TopicConnector
+
+2.6.1 / 2017-07-03
+==================
+
+  * Fix reset password
+  * Add ignore docker-compose override
+  * Set docker mongo version & add dev debug config
+  * Fix forum store import
+  * Update topic tags autocomplete select
+
+2.6.0 / 2017-06-09
+==================
+
+  * Fix mongoIdString comparison
+  * Add tags fuzzy search autocomplete
+  * Fix arrow function messing up virtuals scope on Topic Model
+  * Update topic support icon
+  * Add topic tag navigation
+
+2.5.2 / 2017-06-02
+==================
+
+  * Update democracyos-notifier to 1.5.0
+  * Remove topic-voted job calls
+  * Remove unused rssEnabled and commentsPerPage configs
+  * Remove feedsLimit from docs
+  * Fix topic closed flag
+
+2.5.1 / 2017-05-25
+==================
+
+  * Update democracy-notifier to 1.4.0
+
+2.5.0 / 2017-05-25
+==================
+
+  * Fix error when DemocracyOS is not initialized
+  * Add ONBUILD commands for /ext on Docker image
+  * Fix logout on settings and admin
+  * Fix links text on topic form
+  * Fix topic closingAt admin form
+  * Add description fields on Topic form
+  * Remove flaticons
+  * Add /notifications route to urlBuilder
+  * Add /settings routes to urlBuilder
+  * Add Topic.participantsCount to DB #1417
+  * Add Topic Support Action
+  * Add Topic Preview on admin
+  * Add Collaborative Forum
+
+2.4.0 / 2017-05-04
+==================
+
+  * fix admin whitelists view export #1394
+  * Fix package.json & .snyk to reduce vulnerabilities #1390
+  * Update polls styles and UI #1408
+  * Update topic api find and findAll endpoints to api-v2
+  * Add custom attributes for Topics #1406
+
+2.3.2 / 2017-04-26
+==================
+
+  * Fix radix-trie dep
+
+2.3.1 / 2017-04-26
+==================
+
+  * Fix empty tag value
+  * Fix visibility wildcard for admin Close #1392
+  * Fix visibility middleware on /api
+  * Remove legacy comments api and db-api
+
+2.3.0 / 2017-04-26
+==================
+
+  * Add Tags on Topics #1396
+  * Fix coverUrl svg error on topic edit
+  * Update es translations for privileges
+  * Fix homeLink on header
+  * Fix facebook-card share
+  * Fix card cover url
+  * Add react header everywhere
+
+2.2.3 / 2017-04-21
+==================
+
+  * Update notifier to 1.3.1
+
+2.2.2 / 2017-04-07
+==================
+
+  * Update password digest algorithm from sha1 to sha256
+  * Update Passport.js to 0.3.2
+
+2.2.1 / 2017-04-05
+==================
+
+  * Fix Topic.participants population
+
+2.2.0 / 2017-04-05
+==================
+
+  * Add Forum search for multiForum #1386
+
+2.1.1 / 2017-04-05
+==================
+
+  * Fix topic update with polls
+  * Fix poll ownVote rendering
+  * Remove topicStore restriction to vote and poll on unlaoded items
+  * Update react routes definition without JSX
+
+2.1.0 / 2017-04-03
+==================
+
+  * Add Polls as an alternative to voting #1382
+  * Add Topic PUT and POST on APIv2
+  * Fix cmd+click on user badge items
+  * Fix unknown closing date message
+  * Fix moment config on admin and settings
+
+2.0.4 / 2017-03-27
+==================
+
+  * Fix js build when minifying
+
+2.0.3 / 2017-03-27
+==================
+
+  * Fix tag form #1381
+  * Fix admin link on firefox
+
+2.0.2 / 2017-03-24
+==================
+
+  * Fix empty value on topic.action.method
+
+2.0.1 / 2017-03-23
+==================
+
+  * Fix migrate-mongoose on production
+
+2.0.0 / 2017-03-23
+==================
+
+  * Update ALL dependencies
+  * Add node and npm version checker on startup
+  * Add DB migrations
+  * Add Api v2 and progressively deprecate /lib/api
+  * Add React + React Router on /lib/site ✨
+  * Add Topic privileges by user
+  * Update Comments forms UI
+  * Add multi-auth (FB + Email)
+  * Add user-badge editable by Staff members
+  * Add Bootstrap v4 #1268
+  * Add /ext folder functionality
+
+1.6.0 / 2017-03-23
+==================
+
+  * Add snyk.io service
+  * Clarify installation steps order
+  * Update Express to v4
+  * Update Dockerfile location to root folder
+
+1.5.2 / 2016-10-24
+==================
+
+  * Fix democracyos-notifier crash updating it to 1.1.2
+
+1.5.1 / 2016-10-19
+==================
+
+  * Update democracyos-notifier version
+
+1.5.0 / 2016-10-18
+==================
+
+  * Add config.notifications.nodemailer config option
+  * Update democracyos-notifier version
+  * Update version of democracyos-config
+  * Add availableLocales on embedded notifier config
+
+1.4.5 / 2016-09-29
+==================
+
+  * Fix export on validate
+  * Update jwtSecret clarification for production on docs
+
+1.4.4 / 2016-09-21
+==================
+
+  * Add a random jwtSecret when not configured
+  * Sanitize HTML from comments #1304
+
+1.4.3 / 2016-09-20
+==================
+
+  * Fix header user badge not showing
+
+1.4.2 / 2016-09-19
+==================
+
+  * Add insecure warning message to pages, Thanks @dkaoster! #1285
+
+1.4.1 / 2016-09-14
+==================
+
+  * Fix Italian translations, thanks to @GillesChamp #1289
+  * Fix build command - validate default export was duplicated
+
+1.4.0 / 2016-08-05
+==================
+
+  * Add Let's Ecnrypt tool for free certificates generation #1278
+  * Remove jQuery from site and settings modules :D
+
+1.3.0 / 2016-08-01
+==================
+
+  * Add multiple bundles for different sections #1264
+  * Reorganize all the folders in submodules
+
 1.2.0 / 2016-06-22
 ==================
 
