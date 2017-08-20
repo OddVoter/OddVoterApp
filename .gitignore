@@ -2,7 +2,6 @@
 .npmrc
 .project
 .tmp
-*.csv
 *.dat
 *.DS_Store
 *.gz
