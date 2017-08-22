@@ -410,6 +410,7 @@
   "signup.welcome": "Welcome, {name}!",
   "signup.whitelist.email": "Email {email} is not allowed by admin",
   "signup.with-email": "Signup with email",
+  "signup.fb.with-email": "Signup with Facebook",
   "signup.your-firstname": "Your first name",
   "signup.your-lastname": "Your last name",
   "sorts.by-title-asc": "By title A -> Z",
