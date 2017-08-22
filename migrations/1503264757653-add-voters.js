@@ -16,10 +16,10 @@ exports.up = function up (done) {
         .on("data", function(data) {
 
           const fullName = data.name.split(',')
-          const lastName = fullName[0];
-          const firstName = fullName[1];
+          const lastName = fullName[0].trim();
+          const firstName = fullName[1].trim();
 
-          const county = data.county;
+          const county = data.county.trim();
           const yearOfBirth = data.year_of_birth;
 
           var voter = new RegisteredVoter({
