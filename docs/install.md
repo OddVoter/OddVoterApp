@@ -35,8 +35,9 @@ To run it on **Windows** you must use [Docker](https://www.docker.io/). In the [
 
 - [Fork](http://help.github.com/articles/fork-a-repo) or download this repository.
 - `cd` to the project's location
-- Make sure MongoDB is running and reachable as configured in `config/development.json`. (Default values should work)
+- Run `make packages`
 - Set up your [configuration](configuration.md), and add your email as [staff](configuration.md#-staff-) to be able to initialize your app.
+- Make sure MongoDB is running and reachable as configured in `config/development.json`. (Default values should work)
 - Run `make`
 - Boom! DemocracyOS should be running on port 3000.
 
@@ -86,9 +87,10 @@ To solve it without being root (that is always a bad idea), you can change the `
 ### Running in production environment
 
 1. Configure your [environment variables](https://github.com/DemocracyOS/app/wiki/Environment-variables) for production; specifically, set `NODE_ENV` to `production`
-2. Set your MongoDB instance to run as a service.
-3. Make sure to correctly configure the [Notifier](configuration.md#embebed-notifier-server) for production environments.
-4. From the project's root path, you need to run `make` or:
+2. Set your `JWT_SECRET` environment variable to something random. e.g.: Any of [this](https://www.random.org/strings/?num=10&len=20&digits=on&upperalpha=on&loweralpha=on&unique=off&format=plain&rnd=new).
+3. Set your MongoDB instance to run as a service.
+4. Make sure to correctly configure the [Notifier](configuration.md#embebed-notifier-server) for production environments.
+5. From the project's root path, you need to run `make` or:
   1. `npm install` to install node dependencies.
   2. `npm run build && npm run start` to build assets and run the app. _Don't run as `sudo`._
 

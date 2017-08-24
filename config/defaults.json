@@ -1,6 +1,7 @@
 {
   "locale": "en",
   "protocol": "http",
+  "warnHTTP": true,
   "host": "localhost",
   "publicPort": 3000,
   "mongoUrl": "mongodb://localhost/DemocracyOS-dev",
@@ -14,6 +15,8 @@
   "allowEmailAliases": true,
   "facebookSignin": false,
   "publicEmails": false,
+  "moderatorEnabled": false,
+  "checkNodeVersion": true,
   "auth": {
     "basic": {
       "username": "",
@@ -39,14 +42,18 @@
     "url": "",
     "token": "",
     "mailer": {
-      "name": "The OddVoter Team",
-      "email": "no-reply@oddvoter.com",
+      "name": "The DemocracyOS Team",
+      "email": "no-reply@democracyos.org",
       "service": "",
       "auth": {
         "user": "",
         "pass": ""
       }
-    }
+    },
+    "nodemailer": {}
+  },
+  "slack": {
+    "apiErrorWebhookUri": ""
   },
   "client": [
     "protocol",
@@ -61,58 +68,60 @@
     "organizationUrl",
     "learnMoreUrl",
     "googleAnalyticsTrackingId",
-    "commentsPerPage",
     "frequentlyAskedQuestions",
     "termsOfService",
+    "moderatorEnabled",
     "privacyPolicy",
     "glossary",
     "signinUrl",
     "signupUrl",
     "settingsUrl",
     "homeLink",
+    "headerContrast",
     "headerBackgroundColor",
     "headerFontColor",
     "facebookSignin",
     "visibility",
     "usersWhitelist",
     "multiForum",
+    "restrictForumCreation",
     "tweetText",
     "segmentKey",
     "spamLimit",
-    "availableLocales"
+    "availableLocales",
+    "warnHTTP"
   ],
   "socialshare": {
-    "siteName": "OddVoter",
-    "siteDescription": "Oddvoter - an implementation of DemocracyOS for Atlanta",
+    "siteName": "DemocracyOS",
+    "siteDescription": "DemocracyOS voting system",
     "image": "https://2.gravatar.com/avatar/a8b9176bd0d042db078bf38500727671?d=https%3A%2F%2Fidenticons.github.com%2F14bae9f2564556f8eb23cc263a779f59.png&s=400",
-    "domain": "oddvoter.com",
+    "domain": "democracyos.org",
     "twitter": {
-      "username": "@oddvoter"
+      "username": "@democracyos"
     }
   },
-  "logo": "/boot/logo.png",
-  "logoMobile": "/boot/logo-mobile.png",
-  "favicon": "/boot/favicon.ico",
-  "organizationName": "OddVoter",
-  "organizationEmail": "no-reply@OddVoter.com",
+  "logo": "/lib/boot/logo.png",
+  "logoMobile": "/lib/boot/logo-mobile.png",
+  "favicon": "/lib/boot/favicon.ico",
+  "organizationName": "DemocracyOS on GitHub",
+  "organizationEmail": "no-reply@democracyos.org",
   "organizationUrl": "https://github.com/DemocracyOS/app",
   "learnMoreUrl": "",
   "googleAnalyticsTrackingId": "",
-  "rssEnabled": true,
-  "commentsPerPage": 100,
   "spamLimit": 5,
   "frequentlyAskedQuestions": false,
   "termsOfService": false,
   "privacyPolicy": false,
   "glossary": false,
   "homeLink": "/",
-  "headerBackgroundColor": "",
-  "headerFontColor": "",
+  "headerBackgroundColor": "#64476e",
+  "headerFontColor": "#fff",
   "headerContrast": false,
   "googleAPIKey": "",
   "visibility": "visible",
   "usersWhitelist": false,
   "multiForum": false,
+  "restrictForumCreation": false,
   "defaultForum": "",
   "tweetText": "",
   "forceSafeImageURLs": true,
@@ -137,6 +146,5 @@
     "uk",
     "zh_TW"
   ],
-  "enforceLocale": false,
-  "restrictForumCreation" : false
+  "enforceLocale": false
 }
