@@ -404,6 +404,8 @@
   "signup.home-address": "Home address",
   "signup.your-date-of-birth": "Your date of birth",
   "signup.your-home-address": "Your home address",
+  "signup.verify-registered-voter": "Verify I'm a Registered Voter",
+  "signup.verify-registered-voter-detail": "By selecting this option, we'll match your account with your voter record. It is beneficial for elected officials to understand how many of their constituents that provide opinions on topics are registered to vote.",
   "signup.user-already-validated": "This user already validated the email address",
   "signup.validating": "Validating account.",
   "signup.validation-email-resent": "The validation email was resent.",
