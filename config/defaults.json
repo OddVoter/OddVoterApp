@@ -100,8 +100,8 @@
       "username": "@democracyos"
     }
   },
-  "logo": "/lib/boot/logo.png",
-  "logoMobile": "/lib/boot/logo-mobile.png",
+  "logo": "/lib/boot/OddVoter_Logo.png",
+  "logoMobile": "/lib/boot/apple-icon-180x180.png",
   "favicon": "/lib/boot/favicon.ico",
   "organizationName": "DemocracyOS on GitHub",
   "organizationEmail": "no-reply@democracyos.org",
