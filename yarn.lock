@@ -2377,7 +2377,7 @@ democracyos-normalize@^0.0.1:
 
 oddvoter-notifier@1.1.1:
   version "1.1.1"
-  resolved "https://registry.yarnpkg.com/oddvoter-notifier/-/oddvoter-notifier-1.1.1.tgz#085e43ba0cc8da500a7e6889ac8f4a6d7ce202de"
+  resolved "https://registry.yarnpkg.com/oddvoter-notifier/-/oddvoter-notifier-1.1.1.tgz#69e59b8e5190e3b2e2feedb76b9936047a807b3c"
   dependencies:
     agenda "~0.9.0"
     debug "~2.6.0"
