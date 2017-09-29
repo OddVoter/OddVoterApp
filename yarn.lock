@@ -2375,6 +2375,21 @@ democracyos-normalize@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/democracyos-normalize/-/democracyos-normalize-0.0.1.tgz#c4812e26e7840c089d5b79ecf1757c8a65d6b3c7"
 
+oddvoter-notifier@1.1.1:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/democracyos-notifier/-/democracyos-notifier-1.1.1.tgz#085e43ba0cc8da500a7e6889ac8f4a6d7ce202de"
+  dependencies:
+    agenda "~0.9.0"
+    debug "~2.6.0"
+    defaults-deep "0.2.3"
+    es6-string-html-template "~1.0.2"
+    mongodb "~2.2.28"
+    monk "~6.0.0"
+    nodemailer "~4.0.1"
+    pify "~3.0.0"
+    require-all "~2.2.0"
+    t-component "1.0.0"
+
 democracyos-popover@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/democracyos-popover/-/democracyos-popover-1.1.0.tgz#f784dcb0705d5ecf9f078da9aed272bcb9e40a4f"
