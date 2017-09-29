@@ -22,3 +22,4 @@ pids
 public
 results
 ssl
+yarn.lock
