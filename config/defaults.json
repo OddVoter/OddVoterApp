@@ -110,7 +110,7 @@
   "googleAnalyticsTrackingId": "",
   "spamLimit": 5,
   "frequentlyAskedQuestions": false,
-  "termsOfService": false,
+  "termsOfService": true,
   "privacyPolicy": false,
   "glossary": false,
   "homeLink": "/",
