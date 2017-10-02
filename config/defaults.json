@@ -42,8 +42,8 @@
     "url": "",
     "token": "",
     "mailer": {
-      "name": "The DemocracyOS Team",
-      "email": "no-reply@democracyos.org",
+      "name": "The OddVoter Team",
+      "email": "no-reply@oddvoter.com",
       "service": "",
       "auth": {
         "user": "",
@@ -100,8 +100,8 @@
       "username": "@democracyos"
     }
   },
-  "logo": "/lib/boot/logo.png",
-  "logoMobile": "/lib/boot/logo-mobile.png",
+  "logo": "/lib/boot/OddVoter_Logo.png",
+  "logoMobile": "/lib/boot/apple-icon-180x180.png",
   "favicon": "/lib/boot/favicon.ico",
   "organizationName": "DemocracyOS on GitHub",
   "organizationEmail": "no-reply@democracyos.org",
@@ -110,7 +110,7 @@
   "googleAnalyticsTrackingId": "",
   "spamLimit": 5,
   "frequentlyAskedQuestions": false,
-  "termsOfService": false,
+  "termsOfService": true,
   "privacyPolicy": false,
   "glossary": false,
   "homeLink": "/",
