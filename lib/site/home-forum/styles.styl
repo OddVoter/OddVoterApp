@@ -34,6 +34,7 @@
 
 #logged-out-home+footer
   color #ffffff
+  position absolute
   a
     color #F28E02
 
@@ -77,3 +78,19 @@
     margin-bottom 20px
 
   @import './topic-card/styles'
+
+@media (max-width: 720px)
+  #logged-out-home
+    .app-title
+      .display-2
+        font-size 3em
+        line-height 1.6em
+        text-align center
+
+      .lead
+        font-size 1.2em
+        text-align center
+
+        .btn-signup
+          padding 15px 30px
+          font-size 1em
