@@ -14,13 +14,21 @@
   padding-right: 7px
   padding-left: 7px
   z-index: 1030
+  background: rgba(38,107,142,1)
+  background: -moz-linear-gradient(left, rgba(38,107,142,1) 0%, rgba(39,109,142,1) 0%, rgba(40,110,143,1) 100%)
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(38,107,142,1)), color-stop(0%, rgba(39,109,142,1)), color-stop(100%, rgba(40,110,143,1)))
+  background: -webkit-linear-gradient(left, rgba(38,107,142,1) 0%, rgba(39,109,142,1) 0%, rgba(40,110,143,1) 100%)
+  background: -o-linear-gradient(left, rgba(38,107,142,1) 0%, rgba(39,109,142,1) 0%, rgba(40,110,143,1) 100%)
+  background: -ms-linear-gradient(left, rgba(38,107,142,1) 0%, rgba(39,109,142,1) 0%, rgba(40,110,143,1) 100%)
+  background: linear-gradient(to right, rgba(38,107,142,1) 0%, rgba(39,109,142,1) 0%, rgba(40,110,143,1) 100%)
+  border-bottom: 1px solid #898989
 
   &.with-contrast
     box-shadow: 0 -1px 8px rgba(#d5d5d5, .8)
 
   .logo
     float: left
-    margin-top: 12px
+    margin-top: 0px
     padding: 0 7px
 
     .logo-mobile
@@ -30,7 +38,7 @@
       display: none
 
     img
-      height 30px
+      height 55px
 
     @media screen and (min-width: 560px)
       .logo-mobile
