@@ -399,7 +399,7 @@
   "signup.go-to": "Check out the",
   "signup.lastname": "Lastname",
   "signup.now": "Signup now!",
-  "signup.now-can-vote": "",
+  "signup.now-can-vote": " ",
   "signup.received": "Your sign up data was received. We sent you an email so you can validate your email address.",
   "signup.resend-email": "Resend email",
   "signup.resend-validation-email": "Resend validation email",
