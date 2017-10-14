@@ -89,7 +89,7 @@
     "democracyos-confirmation": "^0.0.5",
     "democracyos-datepicker": "^1.0.3",
     "democracyos-emitter": "^0.0.7",
-    "democracyos-ga": "^1.2.0",
+    "google-ua": "^1.4.1",
     "democracyos-headroom.js": "^0.7.0",
     "democracyos-list.js": "^1.1.4",
     "democracyos-loading-lock": "^0.1.0",
