@@ -1,0 +1,142 @@
+<style>
+  .ov-table {
+    background-color: #1b4761;
+    border-top: 15px solid #386c8b;
+    font-family: Arial;
+    width: 100%;
+    height: 165px;
+    font-family: Helvetica, Arial;
+  }
+
+  .ov-question {
+    text-align: center;
+    width: 100%;
+  }
+
+  .ov-button {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: #0b1d28;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    border: 0;
+    border-left: 2px solid #386c8b;
+    border-right: 2px solid #386c8b;
+    cursor: pointer;
+  }
+
+  .ov-button-yes {
+    border-bottom: 2px solid #386c8b;
+  }
+
+  .ov-button:visited {
+    color: white;
+  }
+
+  .ov-button:hover {
+    color: white;
+  }
+
+  .ov-button:active {
+    color: white;
+  }
+
+  .byline {
+    width: 100%;
+    border: 0px;
+    color: #000000;
+    font-size: 16px;
+    font-family: Helvetica, Arial;
+  }
+
+  .ov-link {
+    color: #00458b;
+    text-decoration: underline;
+    display: inline;
+    color: #3a7bc4;
+  }
+
+  .ov-td {
+    margin: 0 auto;
+    padding: 8px;
+    text-align: center;
+  }
+  .author-name {
+    color: #ffffff;
+    letter-spacing: 0.5px;
+  }
+  .text {
+    color: #FEFEFF;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+  }
+  .inner-table {
+    width: 50%;
+  }
+  .author-table {
+    float: right;
+  }
+  .vote-table {
+    float: left;
+    height: 100%;
+    width: 150px;
+  }
+  .form-button {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+<table class="ov-table" cellspacing="0" cellpadding="0">
+  <col width="50%">
+  <col width="50%">
+  <tr>
+    <td>
+      <table class="inner-table author-table">
+        <tr>
+          <td>
+            <img src="https://www.oddvoter.com/lib/boot/Question-Mark-Icon.png" alt="" width=20 height=20/>
+            <span class="author-name">Jennifer Ide Asks:</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong class="text">Are you in favor of the autonomous vehicle testing program currently planned for the North Ave corridor?</strong>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table class="inner-table vote-table" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <form class="form-button" method="POST" action="https://oddvoter.com/api/v2/topics/59a478e5f895f4000461e5d6/vote">
+              <input class="form-control" type="hidden" name="value" value="positive" />
+              <button class="ov-button ov-button-yes" type="submit">Yes</button>
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <form class="form-button" method="POST" action="https://oddvoter.com/api/v2/topics/59a478e5f895f4000461e5d6/vote">
+              <input class="form-control" type="hidden" name="value" value="negative" />
+              <button class="ov-button" type="submit">No</button>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class="byline">
+  <tr>
+    <td class="ov-td">Powered by <a href="https://oddvoter.com" class="ov-link">OddVoter</a></td>
+  </tr>
+</table>
