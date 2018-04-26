@@ -15,16 +15,18 @@ exports.up = function up (done) {
     .then(
       User.findOptInRecords()
         .then((records) => {
-          records.forEach(record => {
-            findRegisteredVoter(record["firstName"], record["lastName"], record["county"], record["dateOfBirth"])
-              .then(function(match) {
-                if (match.length !== 1) {                 
-                  User.updateUserNeedsReview(record["_id"])
-                } else {                                    
-                  User.updateUserMatchedVoterRecord(record["_id"], match[0])
-                }
-              })
-          });
+          if (records.length !== 0) {
+            records.forEach(record => {
+              findRegisteredVoter(record["firstName"], record["lastName"], record["county"], record["dateOfBirth"])
+                .then(function(match) {
+                  if (match.length !== 1) {                 
+                    User.updateUserNeedsReview(record["_id"])
+                  } else {                                    
+                    User.updateUserMatchedVoterRecord(record["_id"], match[0])
+                  }
+                })
+            });
+          }
         })
     )
   done();
