@@ -32,3 +32,4 @@ yarn.lock
 !.vscode/launch.json
 !.vscode/extensions.json
 .history
+/queries/out1.csv
