@@ -17,8 +17,9 @@ cursor = db.getCollection('topics').aggregate([
 print("id", "last name", "first name", "voted");
 while (cursor.hasNext()) {
   bsonObject = cursor.next();
-  print(bsonObject["userObject"]["_id"] + ";" + 
-        bsonObject["userObject"]["lastName"] + ", " + 
+  print(bsonObject["userObject"]["lastName"] + ", " + 
         bsonObject["userObject"]["firstName"] + ";" + 
+        bsonObject["userObject"]["email"] + ";" + 
+        bsonObject["userObject"]["email"] + ";" + 
         bsonObject["value"]);
 }
