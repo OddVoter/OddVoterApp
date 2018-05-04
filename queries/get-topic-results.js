@@ -14,12 +14,37 @@ cursor = db.getCollection('topics').aggregate([
       "userObject": 1
   }}
 ]);
-print("id", "last name", "first name", "voted");
+print("lastName,firstName,email,voted,voterOptIn,voterMatched,zipCode,lastVotedDate,lastVotedParty,municipalPrecinct,gender,race" );
 while (cursor.hasNext()) {
   bsonObject = cursor.next();
-  print(bsonObject["userObject"]["lastName"] + ", " + 
-        bsonObject["userObject"]["firstName"] + ";" + 
-        bsonObject["userObject"]["email"] + ";" + 
-        bsonObject["userObject"]["email"] + ";" + 
-        bsonObject["value"]);
+
+  if (bsonObject["userObject"]["voterMatchOptIn"]) {
+    if (bsonObject["userObject"]["voterMatched"]) {
+      print(bsonObject["userObject"]["lastName"] + "," + 
+            bsonObject["userObject"]["firstName"] + "," +
+            bsonObject["userObject"]["email"] + "," + 
+            bsonObject["value"] + "," + 
+            bsonObject["userObject"]["voterMatchOptIn"] + "," + 
+            bsonObject["userObject"]["voterMatched"] + "," + 
+            bsonObject["userObject"]["voterRecord"]["zipCode"] + "," + 
+            bsonObject["userObject"]["voterRecord"]["lastVotedDate"] + "," + 
+            bsonObject["userObject"]["voterRecord"]["lastVotedParty"] + "," + 
+            bsonObject["userObject"]["voterRecord"]["municipalPrecinct"] + "," + 
+            bsonObject["userObject"]["voterRecord"]["gender"] + "," + 
+            bsonObject["userObject"]["voterRecord"]["race"]);
+    } else { 
+      print(bsonObject["userObject"]["lastName"] + "," + 
+            bsonObject["userObject"]["firstName"] + "," +
+            bsonObject["userObject"]["email"] + "," + 
+            bsonObject["value"] + "," +
+            bsonObject["userObject"]["voterMatchOptIn"] + "," +             
+            bsonObject["userObject"]["voterMatched"] + ",,,,,,");
+    }
+  } else {
+    print(bsonObject["userObject"]["lastName"] + "," + 
+    bsonObject["userObject"]["firstName"] + "," +
+    bsonObject["userObject"]["email"] + "," + 
+    bsonObject["value"] + ",false,,,,,,,");
+
+  }
 }
