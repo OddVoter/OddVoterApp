@@ -44,7 +44,7 @@ while (cursor.hasNext()) {
     print(bsonObject["userObject"]["lastName"] + "," + 
     bsonObject["userObject"]["firstName"] + "," +
     bsonObject["userObject"]["email"] + "," + 
-    bsonObject["value"] + ",false,,,,,,,");
+    bsonObject["value"] + ",false,,,,,,,"); // hardcoded 'false' indicates user did not opt in to match their voter record
 
   }
 }
