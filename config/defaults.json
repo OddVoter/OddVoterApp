@@ -92,12 +92,12 @@
     "warnHTTP"
   ],
   "socialshare": {
-    "siteName": "DemocracyOS",
-    "siteDescription": "DemocracyOS voting system",
-    "image": "/lib/boot/OddVoter_Logo.png",
-    "domain": "democracyos.org",
+    "siteName": "OddVoter",
+    "siteDescription": "A civic engagement platform for Atlanta",
+    "image": "https://www.oddvoter.com/lib/boot/OddVoter_Logo.png",
+    "domain": "www.oddvoter.com",
     "twitter": {
-      "username": "@democracyos"
+      "username": "@oddvoter"
     }
   },
   "logo": "/lib/boot/OddVoter_Logo.png",
