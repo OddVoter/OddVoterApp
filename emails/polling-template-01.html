@@ -17,48 +17,27 @@
   }
 
   .ov-button {
-    height: 35px;
+    height: auto;
     width: 100px;
     margin: 0;
-    padding: 7px 5px;
-    display: inline-block;
-    background-color: #40a2dc;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: bold;
     letter-spacing: 1px;
     text-decoration: none;
-    color: white;
+    color: #386c8b;
     border: 0;
     cursor: pointer;
     text-align: center;
   }
 
   .ov-button span {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .ov-button-yes {
-    border-radius: 7px 0px 0px 7px;
-  }
-
-  .ov-button-no {
-    border-radius: 0px 7px 7px 0px;
-  }
-
-  .ov-button:visited {
-    color: white;
-  }
-
-  .ov-button:hover {
-    color: white;
-  }
-
-  .ov-button:active {
-    color: white;
+    padding-left: 10px;
   }
 
   .byline {
@@ -134,8 +113,11 @@
   </tr>
   <tr>
     <td style="width: 80%;">
-      <a class="ov-button ov-button-yes" href="https://oddvoter.com/api/v2/topics/59a478e5f895f4000461e5d6/vote/positive"><span>Yes</span></a>
-      <a class="ov-button ov-button-no" href="https://oddvoter.com/api/v2/topics/59a478e5f895f4000461e5d6/vote/negative"><span>No</span></a>
+      <a class="ov-button" href="https://oddvoter-dev.herokuapp.com/api/v2/topics/5b45652306436300044f1456/vote/1"><img src="https://www.oddvoter.com/lib/boot/radio_button.png" width=20 height=20/><span>1</span></a>
+      <a class="ov-button" href="https://oddvoter-dev.herokuapp.com/api/v2/topics/5b45652306436300044f1456/vote/2"><img src="https://www.oddvoter.com/lib/boot/radio_button.png" width=20 height=20/><span>2</span></a>
+      <a class="ov-button" href="https://oddvoter-dev.herokuapp.com/api/v2/topics/5b45652306436300044f1456/vote/3"><img src="https://www.oddvoter.com/lib/boot/radio_button.png" width=20 height=20/><span>3</span></a>
+      <a class="ov-button" href="https://oddvoter-dev.herokuapp.com/api/v2/topics/5b45652306436300044f1456/vote/4"><img src="https://www.oddvoter.com/lib/boot/radio_button.png" width=20 height=20/><span>4</span></a>
+      <a class="ov-button" href="https://oddvoter-dev.herokuapp.com/api/v2/topics/5b45652306436300044f1456/vote/5"><img src="https://www.oddvoter.com/lib/boot/radio_button.png" width=20 height=20/><span>5</span></a>
     </td>
     <td class="ov-td">
       Powered by <a href="https://oddvoter.com" class="ov-link">OddVoter</a>
