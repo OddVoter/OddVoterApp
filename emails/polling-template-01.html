@@ -1,0 +1,128 @@
+<style>
+  .ov-table {
+    background-color: #ffffff;
+    border: 1px solid #d4d4d4;
+    border-left: 15px solid #1b4761;
+    border-spacing: 20px;
+    border-radius: 0px 7px 7px 0px;
+    font-family: Arial;
+    width: 100%;
+    height: 165px;
+    font-family: Helvetica, Arial;
+  }
+
+  .ov-question {
+    text-align: center;
+    width: 100%;
+  }
+
+  .ov-button {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #386c8b;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .ov-button span {
+    padding-left: 10px;
+    color: #386c8b;
+  }
+
+  .byline {
+    width: 100%;
+    border: 0px;
+    color: #000000;
+    font-size: 16px;
+    font-family: Helvetica, Arial;
+  }
+
+  .ov-link {
+    color: #00458b;
+    text-decoration: underline;
+    display: inline;
+    color: #3a7bc4;
+    font-weight: normal;
+  }
+
+  .ov-td {
+    margin: 0 auto;
+    padding: 8px;
+    text-align: right;
+    color: #090909;
+    font-weight: bold;
+  }
+  .author-name {
+    color: #636363;
+    letter-spacing: 0.5px;
+    padding-top: 2px;
+  }
+  .text {
+    color: #393939;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+  }
+  .inner-table {
+    width: 50%;
+  }
+  .author-table {
+    float: right;
+  }
+  .vote-table {
+    float: left;
+    height: 100%;
+    width: 150px;
+  }
+  .form-button {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  @media only screen and (max-width: 420px) {
+    .ov-button {
+      width: 100%;
+      padding: 5px 5px;
+      font-size: 14px;
+    }
+  }
+</style>
+<table class="ov-table" cellspacing="0" cellpadding="0">
+  <tr>
+    <td style="display: flex; justify-content: left; align-items: center;">
+      <img src="https://www.oddvoter.com/lib/boot/Question-Mark-Icon.png" alt="" width=20 height=20 style="display: inline-block; margin-right: 2px;"/>
+      <span class="author-name">Jennifer Ide Asks:</span>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a style="text-decoration: none;" href="https://www.oddvoter.com/topic/5ae1e3e23c1c1d00048174b7"><strong class="text">Are you in favor of the autonomous vehicle testing program currently planned for the North Ave corridor?</strong></a>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 80%;">
+      <a class="ov-button" href="https://oddvoter-dev.herokuapp.com/api/v2/topics/5b4567b0d5647b0004da2930/vote/No%20I%20do%20not%20want%20to"><img src="https://www.oddvoter.com/lib/boot/radio_button.png" width=20 height=20/><span>No I do not want to</span></a>
+      <a class="ov-button" href="https://oddvoter-dev.herokuapp.com/api/v2/topics/5b4567b0d5647b0004da2930/vote/Nop"><img src="https://www.oddvoter.com/lib/boot/radio_button.png" width=20 height=20/><span>No</span></a>
+      <a class="ov-button" href="https://oddvoter-dev.herokuapp.com/api/v2/topics/5b4567b0d5647b0004da2930/vote/Maybe"><img src="https://www.oddvoter.com/lib/boot/radio_button.png" width=20 height=20/><span>Maybe</span></a>
+      <a class="ov-button" href="https://oddvoter-dev.herokuapp.com/api/v2/topics/5b4567b0d5647b0004da2930/vote/Duh"><img src="https://www.oddvoter.com/lib/boot/radio_button.png" width=20 height=20/><span>Duh</span></a>
+    </td>
+  </tr>
+  <tr>
+    <td class="ov-td">
+        Powered by <a href="https://oddvoter.com" class="ov-link">OddVoter</a>
+    </td>
+  </tr>
+</table>
