@@ -4,6 +4,7 @@
     border: 1px solid #d4d4d4;
     border-left: 15px solid #1b4761;
     border-spacing: 20px;
+    border-collapse: separate;
     border-radius: 0px 7px 7px 0px;
     font-family: Arial;
     width: 100%;
@@ -24,6 +25,7 @@
     display: flex;
     flex-direction: row;
     align-items: left;
+    margin-top: 4px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 10px;
@@ -92,6 +94,10 @@
     width: 100%;
     height: 100%;
   }
+  .images {
+    width: 20px;
+    height: 20px;
+  }
   @media only screen and (max-width: 420px) {
     .ov-button {
       width: 100%;
@@ -103,26 +109,25 @@
 <table class="ov-table" cellspacing="0" cellpadding="0">
   <tr>
     <td style="display: flex; justify-content: left; align-items: center;">
-      <img src="https://www.oddvoter.com/lib/boot/Question-Mark-Icon.png" alt="" width=20 height=20 style="display: inline-block; margin-right: 2px;"/>
-      <span class="author-name">Jennifer Ide Asks:</span>
+      <img src="https://www.oddvoter.com/lib/boot/Question-Mark-Icon.png" alt="" width="20" height="20" style="display: inline-block; margin-right: 2px;" class="images" />
+      <span class="author-name">OddVoter Asks:</span>
     </td>
   </tr>
   <tr>
     <td>
-      <a style="text-decoration: none;" href="https://www.oddvoter.com/topic/5ae1e3e23c1c1d00048174b7"><strong class="text">Are you in favor of the autonomous vehicle testing program currently planned for the North Ave corridor?</strong></a>
+      <a style="text-decoration: none;" href="https://www.oddvoter.com/topic/5b621cf734a9cb0004f85a54"><strong class="text">How do you feel about electric scooters in Atlanta?</strong></a>
     </td>
   </tr>
   <tr>
     <td style="width: 80%;">
-      <a class="ov-button" href="https://oddvoter-dev.herokuapp.com/api/v2/topics/5b4567b0d5647b0004da2930/vote/No%20I%20do%20not%20want%20to"><img src="https://www.oddvoter.com/lib/boot/radio_button.png" width=20 height=20/><span>No I do not want to</span></a>
-      <a class="ov-button" href="https://oddvoter-dev.herokuapp.com/api/v2/topics/5b4567b0d5647b0004da2930/vote/Nop"><img src="https://www.oddvoter.com/lib/boot/radio_button.png" width=20 height=20/><span>No</span></a>
-      <a class="ov-button" href="https://oddvoter-dev.herokuapp.com/api/v2/topics/5b4567b0d5647b0004da2930/vote/Maybe"><img src="https://www.oddvoter.com/lib/boot/radio_button.png" width=20 height=20/><span>Maybe</span></a>
-      <a class="ov-button" href="https://oddvoter-dev.herokuapp.com/api/v2/topics/5b4567b0d5647b0004da2930/vote/Duh"><img src="https://www.oddvoter.com/lib/boot/radio_button.png" width=20 height=20/><span>Duh</span></a>
+      <a class="ov-button" href="https://oddvoter-dev.herokuapp.com/api/v2/topics/5b621cf734a9cb0004f85a54/vote/They&#39;re great&excl;"><img src="https://www.oddvoter.com/lib/boot/radio_button.png" width="20" height="20" class="images" /><span>They're great</span></a>
+      <a class="ov-button" href="https://oddvoter-dev.herokuapp.com/api/v2/topics/5b621cf734a9cb0004f85a54/vote/I%20like%20them%20but%20they%20need%20to%20be%20regulated"><img src="https://www.oddvoter.com/lib/boot/radio_button.png" width="20" height="20" class="images" /><span>I like them but they need to be regulated</span></a>
+      <a class="ov-button" href="https://oddvoter-dev.herokuapp.com/api/v2/topics/5b621cf734a9cb0004f85a54/vote/They%20should%20be%20outlawed"><img src="https://www.oddvoter.com/lib/boot/radio_button.png" width="20" height="20" class="images" /><span>They should be outlawed</span></a>
     </td>
   </tr>
   <tr>
     <td class="ov-td">
-        Powered by <a href="https://oddvoter.com" class="ov-link">OddVoter</a>
+        Powered by <a href="https://www.oddvoter.com" class="ov-link">OddVoter</a>
     </td>
   </tr>
 </table>
