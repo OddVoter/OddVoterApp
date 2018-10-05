@@ -1,5 +1,34 @@
 #topics-wrapper
   .topics-admin
-    .col-sm-4
-      a.btn.btn-block.report-raw
-        span=t('admin-topics-form.button.report-raw')
+    .col-sm-12
+      .row
+        h1.topic-title=topic.mediaTitle
+      .row
+        .col-sm-2
+          a.btn.btn-block.report-raw
+            span=t('admin-topics-form.button.report-raw')
+      .row
+        .col-sm-12
+          h3.topic-title=t('admin-topics-form.reporting.table.registered-voter-status')
+          table.table
+            thead
+              tr
+                th=t('admin-topics-form.reporting.table.registered-voter-status.voter-record-status')
+                th=t('admin-topics-form.reporting.table.registered-voter-status.non-registered')
+                th=t('admin-topics-form.reporting.table.registered-voter-status.registered')
+                th=t('admin-topics-form.reporting.table.registered-voter-status.unknown')
+                th=t('admin-topics-form.reporting.table.grand-total')
+            tbody
+              tr
+                td No
+                td 2
+                td 7
+                td N
+                td 9  
+      .row
+        .col-sm-12
+          h3.topic-title=t('admin-topics-form.reporting.table.votes-municipal-district')
+      .row
+        .col-sm-12
+          h3.topic-title=t('admin-topics-form.reporting.table.last-voted-date')
+    
