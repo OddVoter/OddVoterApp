@@ -1,0 +1,59 @@
+- districts = districts || {}
+- votesByMunicipalDistrictData = votesByMunicipalDistrictData || {}
+- votesByMunicipalDistrictGrandTotal = votesByMunicipalDistrictGrandTotal || 'N/A'
+- var isVote = isVote || false
+
+.row
+  .col-sm-12
+    h3.topic-title=t('admin-topics-form.reporting.table.votes-municipal-district')
+    table.table
+      thead
+        tr
+          th=t('admin-topics-form.reporting.table.votes-by-municipal-district.atlanta-district')
+          each district in districts
+            th=district.name
+          th=t('admin-topics-form.reporting.table.grand-total')
+      tbody
+        if isVote
+          tr
+            - var grandTotalNo = 0
+            td No
+            each data in votesByMunicipalDistrictData
+              - grandTotalNo = grandTotalNo + data.no
+              td=data.no
+            td=grandTotalNo
+          tr
+            - var grandTotalYes = 0
+            td Yes
+            each data in votesByMunicipalDistrictData
+              - grandTotalYes = grandTotalYes + data.yes
+              td=data.yes
+            td=grandTotalYes
+          tr
+            - var grandTotalSkip = 0
+            td Skip
+            each data in votesByMunicipalDistrictData
+              - grandTotalSkip = grandTotalSkip + data.neutral
+              td=data.neutral
+            td=grandTotalSkip
+          tr
+            td Grand Total
+            each district in districts
+              td=district.grandTotal
+            td=votesByMunicipalDistrictGrandTotal
+        else
+          h3 hello
+          each data in votesByMunicipalDistrictData
+            tr
+              - var total = 0
+              each key, value in data
+                - total = total + value
+                if key !== 'district'
+                  td=key
+                  td=value
+              td=total
+          tr
+            td Grand Total
+            each district in districts
+              td=district.grandTotal
+            td=votesByMunicipalDistrictGrandTotal

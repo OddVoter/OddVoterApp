@@ -1,0 +1,52 @@
+- registeredVoterStatusData = registeredVoterStatusData || {}
+
+.row
+  .col-sm-12
+    h3.topic-title=t('admin-topics-form.reporting.table.registered-voter-status')
+    table.table
+      thead
+        tr
+          th=t('admin-topics-form.reporting.table.registered-voter-status.voter-record-status')
+          th=t('admin-topics-form.reporting.table.registered-voter-status.non-registered')
+          th=t('admin-topics-form.reporting.table.registered-voter-status.registered')
+          th=t('admin-topics-form.reporting.table.grand-total')
+      tbody
+        if registeredVoterStatusData[0]
+          - var grandTotalNo = 0
+          - var grandTotalYes = 0
+          - var grandTotal = 0
+          each data in registeredVoterStatusData
+            - grandTotalNo = grandTotalNo + data.notRegistered
+            - grandTotalYes = grandTotalYes + data.registered
+            - grandTotal = grandTotal + data.notRegistered + data.registered
+            - var total = data.notRegistered + data.registered
+            tr
+              td=data.value
+              td=data.notRegistered
+              td=data.registered
+              td=total
+          tr
+            td Grand Total
+            td=grandTotalNo
+            td=grandTotalYes
+            td=grandTotal
+        else
+          tr
+            - var grandTotalNo = registeredVoterStatusData.notRegisteredNo + registeredVoterStatusData.registeredNo
+            td No
+            td=registeredVoterStatusData.notRegisteredNo
+            td=registeredVoterStatusData.registeredNo
+            td=grandTotalNo
+          tr
+            - var grandTotalYes = registeredVoterStatusData.notRegisteredYes + registeredVoterStatusData.registeredYes
+            td Yes
+            td=registeredVoterStatusData.notRegisteredYes
+            td=registeredVoterStatusData.registeredYes 
+            td=grandTotalYes
+          tr
+          tr
+            - var grandTotal = registeredVoterStatusData.grandTotalNo + registeredVoterStatusData.grandTotalYes
+            td Grand Total
+            td=registeredVoterStatusData.grandTotalNo
+            td=registeredVoterStatusData.grandTotalYes
+            td=grandTotal
