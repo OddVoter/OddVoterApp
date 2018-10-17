@@ -1,49 +1,10 @@
 #topics-wrapper
   .topics-admin
-    .col-sm-12
+    .col-sm-12.topics-reports-container
       .row
         h1.topic-title=topic.mediaTitle
       .row
         .col-sm-2
           a.btn.btn-block.report-raw
             span=t('admin-topics-form.button.report-raw')
-      .row
-        .col-sm-12
-          h3.topic-title=t('admin-topics-form.reporting.table.registered-voter-status')
-          table.table
-            thead
-              tr
-                th=t('admin-topics-form.reporting.table.registered-voter-status.voter-record-status')
-                th=t('admin-topics-form.reporting.table.registered-voter-status.non-registered')
-                th=t('admin-topics-form.reporting.table.registered-voter-status.registered')
-                th=t('admin-topics-form.reporting.table.registered-voter-status.unknown')
-                th=t('admin-topics-form.reporting.table.grand-total')
-            tbody
-              tr
-                td No
-                td=registeredVoterStatusData.notRegisteredNo
-                td=registeredVoterStatusData.registeredNo
-                td=registeredVoterStatusData.unknownNo ? registeredVoterStatusData.unknownNo : ['']
-                td=registeredVoterStatusData.grandTotalNo
-              tr
-                td Yes
-                td=registeredVoterStatusData.notRegisteredYes
-                td=registeredVoterStatusData.registeredYes
-                td=registeredVoterStatusData.unknownYes ? registeredVoterStatusData.unknownYes : ['']
-                td=registeredVoterStatusData.grandTotalYes
-              tr
-              tr
-                td Grand Total
-              //-   td=registeredVoterStatusData.
-              //-   td=registeredVoterStatusData.
-              //-   td=registeredVoterStatusData.
-              //-   td=registeredVoterStatusData.
-              
-              
-      .row
-        .col-sm-12
-          h3.topic-title=t('admin-topics-form.reporting.table.votes-municipal-district')
-      .row
-        .col-sm-12
-          h3.topic-title=t('admin-topics-form.reporting.table.last-voted-date')
     
