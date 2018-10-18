@@ -1,7 +1,7 @@
 - districts = districts || {}
 - votesByMunicipalDistrictData = votesByMunicipalDistrictData || {}
 - votesByMunicipalDistrictGrandTotal = votesByMunicipalDistrictGrandTotal || 'N/A'
-- var isVote = isVote || false
+- var isVote = (votesByMunicipalDistrictData[0]).yes !== undefined || false
 
 .row
   .col-sm-12
@@ -15,7 +15,7 @@
           th=t('admin-topics-form.reporting.table.grand-total')
       tbody
         if isVote
-          tr
+          tr.LOL
             - var grandTotalNo = 0
             td No
             each data in votesByMunicipalDistrictData
@@ -42,14 +42,13 @@
               td=district.grandTotal
             td=votesByMunicipalDistrictGrandTotal
         else
-          h3 hello
           each data in votesByMunicipalDistrictData
-            tr
+            tr.POO
+              td=data.item
               - var total = 0
-              each key, value in data
-                - total = total + value
-                if key !== 'district'
-                  td=key
+              each value, key in data
+                if (key !== 'item')
+                  - total = total + value
                   td=value
               td=total
           tr
