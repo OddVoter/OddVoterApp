@@ -44,15 +44,18 @@
         else
           each data in lastVotedDateData
             tr
-              td=data.item
-              - var total = 0
-              each value, key in data
-                if (key !== 'item')
-                  - total = total + value
-                  td=value
-              td=total
+              if (data.item !== 'TOTALS')
+                td=data.item
+                - var total = 0
+                each value, key in data
+                  if (key !== 'item' && key !== 'TOTALS')
+                    - total = total + value
+                    td=value
+                td=total
           tr
             td Grand Total
-            each lastVotedDate in lastVotedDates
-              td=lastVotedDate.grandTotal
-            td=lastVotedDateGrandTotal
+            each data in lastVotedDateData
+              if (data.item === 'TOTALS')
+                each value, key in data
+                  if (key !== 'item' && key !== 'TOTALS')
+                    td=value
