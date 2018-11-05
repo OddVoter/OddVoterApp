@@ -15,7 +15,7 @@
           th=t('admin-topics-form.reporting.table.grand-total')
       tbody
         if isVote
-          tr.LOL
+          tr
             - var grandTotalNo = 0
             td No
             each data in votesByMunicipalDistrictData
@@ -43,7 +43,7 @@
             td=votesByMunicipalDistrictGrandTotal
         else
           each data in votesByMunicipalDistrictData
-            tr.POO
+            tr
               td=data.item
               - var total = 0
               each value, key in data

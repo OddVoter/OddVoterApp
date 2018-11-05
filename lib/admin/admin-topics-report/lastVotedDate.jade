@@ -1,3 +1,58 @@
+- lastVotedDates = lastVotedDates || {}
+- lastVotedDateData = lastVotedDateData || {}
+- lastVotedDateGrandTotal = lastVotedDateGrandTotal || 'N/A'
+- var isVote = (lastVotedDateData[0]).yes !== undefined || false
+
 .row
   .col-sm-12
     h3.topic-title=t('admin-topics-form.reporting.table.last-voted-date')
+    table.table
+      thead
+        tr
+          th=t('admin-topics-form.reporting.table.last-voted-date')
+          each lastVotedDate in lastVotedDates
+            th=lastVotedDate.name
+          th=t('admin-topics-form.reporting.table.grand-total')
+      tbody
+        if isVote
+          tr
+            - var grandTotalNo = 0
+            td No
+            each data in lastVotedDateData
+              - grandTotalNo = grandTotalNo + data.no
+              td=data.no
+            td=grandTotalNo
+          tr
+            - var grandTotalYes = 0
+            td Yes
+            each data in lastVotedDateData
+              - grandTotalYes = grandTotalYes + data.yes
+              td=data.yes
+            td=grandTotalYes
+          tr
+            - var grandTotalSkip = 0
+            td Skip
+            each data in lastVotedDateData
+              - grandTotalSkip = grandTotalSkip + data.neutral
+              td=data.neutral
+            td=grandTotalSkip
+          tr
+            td Grand Total
+            each lastVotedDate in lastVotedDates
+              td=lastVotedDate.grandTotal
+            td=lastVotedDateGrandTotal
+        else
+          each data in lastVotedDateData
+            tr
+              td=data.item
+              - var total = 0
+              each value, key in data
+                if (key !== 'item')
+                  - total = total + value
+                  td=value
+              td=total
+          tr
+            td Grand Total
+            each lastVotedDate in lastVotedDates
+              td=lastVotedDate.grandTotal
+            td=lastVotedDateGrandTotal
